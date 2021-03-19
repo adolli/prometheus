@@ -23,9 +23,9 @@ import (
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/tsdb/tsdbutil"
+	"github.com/adolli/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/tsdb/chunkenc"
+	"github.com/adolli/prometheus/tsdb/tsdbutil"
 )
 
 func TestMergeQuerierWithChainMerger(t *testing.T) {

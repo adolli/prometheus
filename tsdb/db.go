@@ -35,14 +35,14 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	tsdb_errors "github.com/prometheus/prometheus/tsdb/errors"
-	"github.com/prometheus/prometheus/tsdb/fileutil"
-	_ "github.com/prometheus/prometheus/tsdb/goversion" // Load the package into main to make sure minium Go version is met.
-	"github.com/prometheus/prometheus/tsdb/wal"
+	"github.com/adolli/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/storage"
+	"github.com/adolli/prometheus/tsdb/chunkenc"
+	"github.com/adolli/prometheus/tsdb/chunks"
+	tsdb_errors "github.com/adolli/prometheus/tsdb/errors"
+	"github.com/adolli/prometheus/tsdb/fileutil"
+	_ "github.com/adolli/prometheus/tsdb/goversion" // Load the package into main to make sure minium Go version is met.
+	"github.com/adolli/prometheus/tsdb/wal"
 )
 
 const (

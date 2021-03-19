@@ -24,7 +24,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
+	"github.com/adolli/prometheus/tsdb/chunkenc"
 )
 
 func TestChunkDiskMapper_WriteChunk_Chunk_IterateChunks(t *testing.T) {
@@ -244,7 +244,7 @@ func TestChunkDiskMapper_Truncate(t *testing.T) {
 
 // TestChunkDiskMapper_Truncate_PreservesFileSequence tests that truncation doesn't poke
 // holes into the file sequence, even if there are empty files in between non-empty files.
-// This test exposes https://github.com/prometheus/prometheus/issues/7412 where the truncation
+// This test exposes https://github.com/adolli/prometheus/issues/7412 where the truncation
 // simply deleted all empty files instead of stopping once it encountered a non-empty file.
 func TestChunkDiskMapper_Truncate_PreservesFileSequence(t *testing.T) {
 	hrw := testChunkDiskMapper(t)
@@ -315,7 +315,7 @@ func TestChunkDiskMapper_Truncate_PreservesFileSequence(t *testing.T) {
 }
 
 // TestHeadReadWriter_TruncateAfterIterateChunksError tests for
-// https://github.com/prometheus/prometheus/issues/7753
+// https://github.com/adolli/prometheus/issues/7753
 func TestHeadReadWriter_TruncateAfterFailedIterateChunks(t *testing.T) {
 	hrw := testChunkDiskMapper(t)
 	defer func() {
@@ -329,7 +329,7 @@ func TestHeadReadWriter_TruncateAfterFailedIterateChunks(t *testing.T) {
 	dir := hrw.dir.Name()
 	require.NoError(t, hrw.Close())
 
-	// Restarting to recreate https://github.com/prometheus/prometheus/issues/7753.
+	// Restarting to recreate https://github.com/adolli/prometheus/issues/7753.
 	hrw, err = NewChunkDiskMapper(dir, chunkenc.NewPool(), DefaultWriteBufferSize)
 	require.NoError(t, err)
 

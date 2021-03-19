@@ -22,7 +22,7 @@ import (
 	common_config "github.com/prometheus/common/config"
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/config"
+	"github.com/adolli/prometheus/config"
 )
 
 func TestStorageLifecycle(t *testing.T) {

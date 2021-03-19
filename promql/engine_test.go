@@ -26,10 +26,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/promql/parser"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/adolli/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/pkg/timestamp"
+	"github.com/adolli/prometheus/promql/parser"
+	"github.com/adolli/prometheus/storage"
 )
 
 func TestMain(m *testing.M) {
@@ -911,7 +911,7 @@ load 1ms
 		require.NoError(t, err)
 	}
 
-	// To test the fix for https://github.com/prometheus/prometheus/issues/8433.
+	// To test the fix for https://github.com/adolli/prometheus/issues/8433.
 	_, err = app.Append(0, labels.FromStrings("__name__", "metric_timestamp"), 3600*1000, 1000)
 	require.NoError(t, err)
 
@@ -1060,7 +1060,7 @@ load 1ms
 				},
 			},
 		}, {
-			// Tests for https://github.com/prometheus/prometheus/issues/8433.
+			// Tests for https://github.com/adolli/prometheus/issues/8433.
 			// The trick here is that the query range should be > lookback delta.
 			query: `timestamp(metric_timestamp @ 3600)`,
 			start: 0, end: 7 * 60, interval: 60,

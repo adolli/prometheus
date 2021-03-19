@@ -28,7 +28,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws/credentials/stscreds"
 	"github.com/aws/aws-sdk-go/aws/session"
 	signer "github.com/aws/aws-sdk-go/aws/signer/v4"
-	"github.com/prometheus/prometheus/config"
+	"github.com/adolli/prometheus/config"
 )
 
 var sigv4HeaderDenylist = []string{

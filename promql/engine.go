@@ -35,12 +35,12 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/uber/jaeger-client-go"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/pkg/value"
-	"github.com/prometheus/prometheus/promql/parser"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/util/stats"
+	"github.com/adolli/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/pkg/timestamp"
+	"github.com/adolli/prometheus/pkg/value"
+	"github.com/adolli/prometheus/promql/parser"
+	"github.com/adolli/prometheus/storage"
+	"github.com/adolli/prometheus/util/stats"
 )
 
 const (

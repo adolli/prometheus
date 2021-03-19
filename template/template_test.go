@@ -22,8 +22,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/promql"
+	"github.com/adolli/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/promql"
 )
 
 func TestTemplateExpansion(t *testing.T) {

@@ -29,9 +29,9 @@ import (
 	"github.com/pkg/errors"
 	"go.uber.org/atomic"
 
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	tsdb_errors "github.com/prometheus/prometheus/tsdb/errors"
-	"github.com/prometheus/prometheus/tsdb/fileutil"
+	"github.com/adolli/prometheus/tsdb/chunkenc"
+	tsdb_errors "github.com/adolli/prometheus/tsdb/errors"
+	"github.com/adolli/prometheus/tsdb/fileutil"
 )
 
 // Head chunk file header fields constants.

@@ -26,9 +26,9 @@ import (
 	"k8s.io/client-go/kubernetes/fake"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/prometheus/prometheus/discovery"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/adolli/prometheus/discovery"
+	"github.com/adolli/prometheus/discovery/targetgroup"
+	"github.com/adolli/prometheus/util/testutil"
 )
 
 func TestMain(m *testing.M) {

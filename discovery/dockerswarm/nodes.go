@@ -22,8 +22,8 @@ import (
 	"github.com/docker/docker/api/types"
 	"github.com/prometheus/common/model"
 
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/util/strutil"
+	"github.com/adolli/prometheus/discovery/targetgroup"
+	"github.com/adolli/prometheus/util/strutil"
 )
 
 const (

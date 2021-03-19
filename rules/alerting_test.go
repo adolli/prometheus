@@ -22,11 +22,11 @@ import (
 	"github.com/go-kit/kit/log"
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/promql/parser"
-	"github.com/prometheus/prometheus/util/teststorage"
+	"github.com/adolli/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/pkg/timestamp"
+	"github.com/adolli/prometheus/promql"
+	"github.com/adolli/prometheus/promql/parser"
+	"github.com/adolli/prometheus/util/teststorage"
 )
 
 func TestAlertingRuleHTMLSnippet(t *testing.T) {

@@ -25,7 +25,7 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/pkg/labels"
 )
 
 func TestPromParse(t *testing.T) {

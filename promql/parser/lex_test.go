@@ -156,7 +156,7 @@ var tests = []struct {
 				expected: []Item{{STRING, 0, "`test\\.expression`"}},
 			},
 			{
-				// See https://github.com/prometheus/prometheus/issues/939.
+				// See https://github.com/adolli/prometheus/issues/939.
 				input: ".٩",
 				fail:  true,
 			},

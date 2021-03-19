@@ -19,9 +19,9 @@ import (
 	"sync"
 
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/prometheus/pkg/exemplar"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/adolli/prometheus/pkg/exemplar"
+	"github.com/adolli/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/storage"
 )
 
 type CircularExemplarStorage struct {

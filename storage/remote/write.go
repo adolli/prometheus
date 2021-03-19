@@ -23,10 +23,10 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/tsdb/wal"
+	"github.com/adolli/prometheus/config"
+	"github.com/adolli/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/storage"
+	"github.com/adolli/prometheus/tsdb/wal"
 )
 
 var (

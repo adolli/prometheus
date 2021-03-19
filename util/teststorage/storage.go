@@ -18,8 +18,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/prometheus/prometheus/tsdb"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/adolli/prometheus/tsdb"
+	"github.com/adolli/prometheus/util/testutil"
 )
 
 // New returns a new TestStorage for testing purposes

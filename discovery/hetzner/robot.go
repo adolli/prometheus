@@ -31,8 +31,8 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/common/version"
 
-	"github.com/prometheus/prometheus/discovery/refresh"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
+	"github.com/adolli/prometheus/discovery/refresh"
+	"github.com/adolli/prometheus/discovery/targetgroup"
 )
 
 const (

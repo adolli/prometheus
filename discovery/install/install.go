@@ -16,19 +16,19 @@
 package install
 
 import (
-	_ "github.com/prometheus/prometheus/discovery/azure"        // register azure
-	_ "github.com/prometheus/prometheus/discovery/consul"       // register consul
-	_ "github.com/prometheus/prometheus/discovery/digitalocean" // register digitalocean
-	_ "github.com/prometheus/prometheus/discovery/dns"          // register dns
-	_ "github.com/prometheus/prometheus/discovery/dockerswarm"  // register dockerswarm
-	_ "github.com/prometheus/prometheus/discovery/ec2"          // register ec2
-	_ "github.com/prometheus/prometheus/discovery/eureka"       // register eureka
-	_ "github.com/prometheus/prometheus/discovery/file"         // register file
-	_ "github.com/prometheus/prometheus/discovery/gce"          // register gce
-	_ "github.com/prometheus/prometheus/discovery/hetzner"      // register hetzner
-	_ "github.com/prometheus/prometheus/discovery/kubernetes"   // register kubernetes
-	_ "github.com/prometheus/prometheus/discovery/marathon"     // register marathon
-	_ "github.com/prometheus/prometheus/discovery/openstack"    // register openstack
-	_ "github.com/prometheus/prometheus/discovery/triton"       // register triton
-	_ "github.com/prometheus/prometheus/discovery/zookeeper"    // register zookeeper
+	_ "github.com/adolli/prometheus/discovery/azure"        // register azure
+	_ "github.com/adolli/prometheus/discovery/consul"       // register consul
+	_ "github.com/adolli/prometheus/discovery/digitalocean" // register digitalocean
+	_ "github.com/adolli/prometheus/discovery/dns"          // register dns
+	_ "github.com/adolli/prometheus/discovery/dockerswarm"  // register dockerswarm
+	_ "github.com/adolli/prometheus/discovery/ec2"          // register ec2
+	_ "github.com/adolli/prometheus/discovery/eureka"       // register eureka
+	_ "github.com/adolli/prometheus/discovery/file"         // register file
+	_ "github.com/adolli/prometheus/discovery/gce"          // register gce
+	_ "github.com/adolli/prometheus/discovery/hetzner"      // register hetzner
+	_ "github.com/adolli/prometheus/discovery/kubernetes"   // register kubernetes
+	_ "github.com/adolli/prometheus/discovery/marathon"     // register marathon
+	_ "github.com/adolli/prometheus/discovery/openstack"    // register openstack
+	_ "github.com/adolli/prometheus/discovery/triton"       // register triton
+	_ "github.com/adolli/prometheus/discovery/zookeeper"    // register zookeeper
 )

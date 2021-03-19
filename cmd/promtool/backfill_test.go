@@ -21,9 +21,9 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/tsdb"
+	"github.com/adolli/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/storage"
+	"github.com/adolli/prometheus/tsdb"
 	"github.com/stretchr/testify/require"
 )
 
@@ -365,7 +365,7 @@ http_requests_total{code="400"} 1 1565166113.989
 				},
 			},
 		},
-		{ // For https://github.com/prometheus/prometheus/issues/8476.
+		{ // For https://github.com/adolli/prometheus/issues/8476.
 			ToParse: `# HELP http_requests_total The total number of HTTP requests.
 # TYPE http_requests_total counter
 http_requests_total{code="200"} 1021 0

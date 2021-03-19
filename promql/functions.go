@@ -24,8 +24,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/prometheus/common/model"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/promql/parser"
+	"github.com/adolli/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/promql/parser"
 )
 
 // FunctionCall is the type of a PromQL function implementation
@@ -586,7 +586,7 @@ func funcDeriv(vals []parser.Value, args parser.Expressions, enh *EvalNodeHelper
 
 	// We pass in an arbitrary timestamp that is near the values in use
 	// to avoid floating point accuracy issues, see
-	// https://github.com/prometheus/prometheus/issues/2674
+	// https://github.com/adolli/prometheus/issues/2674
 	slope, _ := linearRegression(samples.Points, samples.Points[0].T)
 	return append(enh.Out, Sample{
 		Point: Point{V: slope},

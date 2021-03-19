@@ -35,16 +35,16 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/relabel"
-	"github.com/prometheus/prometheus/pkg/textparse"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/pkg/value"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/util/teststorage"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/adolli/prometheus/config"
+	"github.com/adolli/prometheus/discovery/targetgroup"
+	"github.com/adolli/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/pkg/relabel"
+	"github.com/adolli/prometheus/pkg/textparse"
+	"github.com/adolli/prometheus/pkg/timestamp"
+	"github.com/adolli/prometheus/pkg/value"
+	"github.com/adolli/prometheus/storage"
+	"github.com/adolli/prometheus/util/teststorage"
+	"github.com/adolli/prometheus/util/testutil"
 )
 
 func TestMain(m *testing.M) {

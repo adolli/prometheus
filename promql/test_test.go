@@ -20,7 +20,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/pkg/labels"
 )
 
 func TestLazyLoader_WithSamplesTill(t *testing.T) {
@@ -100,7 +100,7 @@ func TestLazyLoader_WithSamplesTill(t *testing.T) {
 						},
 					},
 				},
-				{ // This tests fix for https://github.com/prometheus/prometheus/issues/5064.
+				{ // This tests fix for https://github.com/adolli/prometheus/issues/5064.
 					ts:             time.Unix(300, 0),
 					checkOnlyError: true,
 				},

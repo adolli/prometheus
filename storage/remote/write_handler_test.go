@@ -23,9 +23,9 @@ import (
 	"testing"
 
 	"github.com/go-kit/kit/log"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/prompb"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/adolli/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/prompb"
+	"github.com/adolli/prometheus/storage"
 	"github.com/stretchr/testify/require"
 )
 

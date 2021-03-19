@@ -20,14 +20,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/promql/parser"
-	"github.com/prometheus/prometheus/util/teststorage"
+	"github.com/adolli/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/pkg/timestamp"
+	"github.com/adolli/prometheus/promql/parser"
+	"github.com/adolli/prometheus/util/teststorage"
 )
 
 func TestDeriv(t *testing.T) {
-	// https://github.com/prometheus/prometheus/issues/2674#issuecomment-315439393
+	// https://github.com/adolli/prometheus/issues/2674#issuecomment-315439393
 	// This requires more precision than the usual test system offers,
 	// so we test it by hand.
 	storage := teststorage.New(t)

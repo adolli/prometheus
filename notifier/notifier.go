@@ -39,10 +39,10 @@ import (
 	"github.com/prometheus/common/version"
 	"go.uber.org/atomic"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/relabel"
+	"github.com/adolli/prometheus/config"
+	"github.com/adolli/prometheus/discovery/targetgroup"
+	"github.com/adolli/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/pkg/relabel"
 )
 
 const (

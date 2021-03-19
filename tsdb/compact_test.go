@@ -29,11 +29,11 @@ import (
 	prom_testutil "github.com/prometheus/client_golang/prometheus/testutil"
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	"github.com/prometheus/prometheus/tsdb/fileutil"
-	"github.com/prometheus/prometheus/tsdb/tombstones"
+	"github.com/adolli/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/tsdb/chunkenc"
+	"github.com/adolli/prometheus/tsdb/chunks"
+	"github.com/adolli/prometheus/tsdb/fileutil"
+	"github.com/adolli/prometheus/tsdb/tombstones"
 )
 
 func TestSplitByRange(t *testing.T) {
@@ -139,7 +139,7 @@ func TestSplitByRange(t *testing.T) {
 	}
 }
 
-// See https://github.com/prometheus/prometheus/issues/3064
+// See https://github.com/adolli/prometheus/issues/3064
 func TestNoPanicFor0Tombstones(t *testing.T) {
 	metas := []dirMeta{
 		{

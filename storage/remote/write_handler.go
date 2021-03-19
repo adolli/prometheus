@@ -19,8 +19,8 @@ import (
 
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
-	"github.com/prometheus/prometheus/prompb"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/adolli/prometheus/prompb"
+	"github.com/adolli/prometheus/storage"
 )
 
 type handler struct {

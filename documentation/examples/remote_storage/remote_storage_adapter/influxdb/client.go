@@ -27,7 +27,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/common/model"
 
-	"github.com/prometheus/prometheus/prompb"
+	"github.com/adolli/prometheus/prompb"
 )
 
 // Client allows sending batches of Prometheus samples to InfluxDB.

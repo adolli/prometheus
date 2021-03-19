@@ -21,10 +21,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/promql/parser"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
+	"github.com/adolli/prometheus/pkg/labels"
+	"github.com/adolli/prometheus/promql/parser"
+	"github.com/adolli/prometheus/storage"
+	"github.com/adolli/prometheus/tsdb/chunkenc"
 )
 
 func (Matrix) Type() parser.ValueType { return parser.ValueTypeMatrix }
@@ -129,7 +129,7 @@ func (vec Vector) String() string {
 
 // ContainsSameLabelset checks if a vector has samples with the same labelset
 // Such a behavior is semantically undefined
-// https://github.com/prometheus/prometheus/issues/4562
+// https://github.com/adolli/prometheus/issues/4562
 func (vec Vector) ContainsSameLabelset() bool {
 	l := make(map[uint64]struct{}, len(vec))
 	for _, s := range vec {
@@ -172,7 +172,7 @@ func (m Matrix) Swap(i, j int)      { m[i], m[j] = m[j], m[i] }
 
 // ContainsSameLabelset checks if a matrix has samples with the same labelset
 // Such a behavior is semantically undefined
-// https://github.com/prometheus/prometheus/issues/4562
+// https://github.com/adolli/prometheus/issues/4562
 func (m Matrix) ContainsSameLabelset() bool {
 	l := make(map[uint64]struct{}, len(m))
 	for _, ss := range m {
